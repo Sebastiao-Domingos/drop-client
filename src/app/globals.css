@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .light * {
+    @apply scroll-smooth;
+    /* @apply text-sm; */
+    --react-international-phone-country-selector-border-color: rgb(
+      209 213 219 / 60%
+    );
+    --react-international-phone-border-color: rgb(209 213 219 / 60%);
+  }
+
+  @media screen and (min-width: 640px) {
+    /* * {
+      @apply text-base;
+    } */
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+    /* background: #000; */
+  }
+  ::-webkit-scrollbar-button {
+    @apply hidden;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary/60;
+    @apply rounded-full;
+  }
+  table td,
+  table th {
+    @apply px-2;
+  }
+
+  /* dark mode */
+  .dark
+    button.MuiButtonBase-root.MuiPaginationItem-root.MuiPaginationItem-sizeMedium.MuiPaginationItem-text.MuiPaginationItem-circular.MuiPaginationItem-textPrimary.MuiPaginationItem-page.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+    @apply text-slate-200;
+  }
+  .dark .border {
+    @apply border-gray-800;
+  }
+
+  .dark
+    td.MuiTableCell-body.MuiTableCell-root.MuiTableCell-sizeMedium.css-1ex1afd-MuiTableCell-root,
+  th.MuiTableCell-head.MuiTableCell-root.MuiTableCell-sizeMedium {
+    @apply border-b-gray-800;
+  }
+
+  .dark fieldset {
+    @apply border-gray-800;
+  }
+
+  legend {
+    @apply text-sm px-2;
+  }
+  .dark textarea {
+    @apply bg-gray-950/60 border-gray-800;
+  }
+
+  .header input[type="text"] {
+    @apply rounded;
+  }
+
+  .dark * {
+    --react-international-phone-country-selector-border-color: "transparent";
+    --react-international-phone-border-color: "transparent";
+    @apply text-slate-400;
+  }
+  .dark .bg-slate-50,
+  .dark .bg-dark-order,
+  .dark .bg-slate-100 {
+    @apply !bg-gray-950;
+  }
+  .dark input,
+  .dark select {
+    @apply bg-gray-700 border-transparent text-slate-400;
+  }
+  thead[class*="dark\:bg-primary"] * {
+    @apply !text-gray-950;
+  }
+  thead th {
+    @apply text-left;
+  }
+  .dark .anchor svg {
+    @apply fill-gray-900;
+  }
+  .dark .border-b,
+  .dark .border-r {
+    @apply border-gray-800;
+  }
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* react slick */
+.slick-track {
+  margin-left: 0 !important;
+}
+.slick-slide > div:first-child {
+  margin-left: 4px !important;
+}
+.slick-slide > div {
+  margin-right: 4px !important;
+}
+
+/* google material */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+/* radix popover */
+div[data-radix-popper-content-wrapper] {
+  z-index: 50 !important;
+}
+
+.MuiTablePagination-toolbar {
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  border: 1px solid transparent;
+  border-radius: 16px;
+  padding: 10px;
+}
+.dark .MuiTablePagination-toolbar {
+  background-color: transparent;
+  border: 1px solid rgb(31 41 55 / var(--tw-bg-opacity));
+  border-radius: 16px;
+  padding: 10px;
+}
+.MuiTablePagination-toolbar:hover,
+.dark .MuiTablePagination-toolbar:hover {
+  border-color: rgba(0, 105, 128, 0.3);
+}
+
+.MuiTablePagination-selectLabel {
+  display: none;
+}
+
+.dark
+  .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded.MuiPaper-elevation8.MuiMenu-paper.MuiPopover-paper.MuiMenu-paper.css-3dzjca-MuiPaper-root-MuiPopover-paper-MuiMenu-paper {
+  background-color: #1f2937 !important;
+}
+.dark .react-international-phone-country-selector-dropdown {
+  background-color: #1f2937 !important;
+  border: 1px solid rgba(0, 105, 128, 0.5) !important;
+}
+.react-international-phone-country-selector-dropdown {
+  border: 1px solid rgba(0, 105, 128, 0.3) !important;
+  border-radius: 4px 4px 4px 4px;
+}
+.react-international-phone-country-selector-dropdown__list-item:hover {
+  background-color: #00698038 !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--selected,
+.react-international-phone-country-selector-dropdown__list-item--focused {
+  background-color: #00698096 !important;
+}
+
+.dark .react-international-phone-input {
+  border: 1px solid #1f2937 !important;
+}
+.react-international-phone-input:focus {
+  border: 1px solid rgba(0, 105, 128, 0.5) !important;
+}
+.dark .react-international-phone-country-selector-button {
+  border: 1px solid #1f2937 !important;
+}
+.react-international-phone-country-selector-button:hover {
+  border: 1px solid rgba(0, 105, 128, 0.5) !important;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root {
+  color: #fff;
+  background-color: #006980;
+}
+
+/* .css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  color: #fff;
+  background-color: #006980;
+}
+
+.css-8je8zh-MuiTouchRipple-root {
+  background-color: #0069809f !important;
+} */
+.dark .MuiTableRow-head {
+  @apply bg-primary;
+}
+
+.dark .MuiTableRow-head th {
+  @apply text-slate-100;
+}
+
+.css-1to7aaw-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+  background-color: #006980 !important;
+}
+
+/* App.css */
+.flicking-viewport {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  perspective: 100px;
+  overflow: hidden;
+  padding: 4px;
+}
+
+.flicking-camera {
+  height: 100%;
+}
+
+.date-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.date-panel-border {
+  z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100px;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.shadow-top,
+.shadow-bottom {
+  z-index: 1;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  height: 100px;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+  pointer-events: none;
+}
+
+.shadow-top {
+  top: 0;
+}
+
+.shadow-bottom {
+  bottom: 0;
+  transform: translateX(-50%) rotate(180deg);
+}

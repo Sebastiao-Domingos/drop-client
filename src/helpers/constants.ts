@@ -1,0 +1,6 @@
+/**
+ * Tempo em ms
+ */
+const DEFAULT_TOAST_TIME_VISIBILITY = 1200;
+
+export { DEFAULT_TOAST_TIME_VISIBILITY };
